@@ -1,0 +1,442 @@
+
+
+/*--------------------------------------------Fonts added-------------------------------------------------------*/
+@font-face {
+    font-family: ember-medium;
+    src: url(fonts/Ember/Amazon-Ember-Medium.ttf);
+}
+@font-face {
+    font-family: ember-light;
+    src: url(fonts/Ember/AmazonEmber_Rg.ttf);
+}
+@font-face {
+    font-family: ember-regular;
+    src: url(fonts/Ember/AmazonEmber_Rglt.ttf);
+}
+
+@font-face {
+    font-family: ember-bold;
+    src: url(fonts/Ember/AmazonEmber_Bd.ttf);
+}
+@font-face {
+    font-family: ember-H;
+    src: url(fonts/Ember/AmazonEmber_He.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Amazon Ember", Arial, sans-serif;
+}
+
+body {
+    background: #dadada;
+}
+.border-white{
+    border: 1.5px solid transparent;
+    padding: 3px;
+    transition: 0.2 ease-out;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.border-white:hover {
+   
+    border: 1.5px solid #fff;
+}
+/*--------------Navigation Bar----------*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #131921;
+    padding: 10px 20px;
+    color: white;
+}
+
+.nav-country {
+    display: flex;
+    align-items: end;
+    margin-left: 15px;
+    font-size: 13px;
+    box-sizing: border-box;
+  border: none;
+    color: #c4c4c4;
+}
+
+.nav-country h1 {
+    font-size: 14px;
+    color: white;
+}
+
+.nav-search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: white;
+    color: grey;
+    max-width: 1000px;
+    border-radius: 4px;
+    margin-left: 15px;
+}
+
+.nav-search-category {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 5px;
+    background-color: #e5e5e5;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.nav-search-input {
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.nav-search-icon {
+    max-width: 41px;
+    padding: 8px;
+    background: #ffd64f;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.nav-language {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.nav-texts {
+    margin-left: 15px;
+}
+
+.nav-texts p {
+    font-size: 10px;
+}
+
+.nav-texts h1 {
+    font-size: 14px;
+}
+
+.nav-cart {
+    display: flex;
+    align-items: end;
+    margin: 0px 15px;
+}
+
+.nav-bottom{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 20px;
+    background: #232f3e;
+    color: white;
+    font-size: 15px;
+}
+
+.nav-bottom div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+}
+/*---------Header Slider Images---------------*/
+
+.header-slider ul {
+    display: flex;
+    overflow-y: hidden;
+}
+
+.header-img {
+    max-width: 100%;
+    mask-image: linear-gradient(to bottom, #000000 50%, transparent 100%);
+}
+
+.header-slider a  {
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+    padding: 30vh 3vw;
+    background: #ffffff4f;
+    background-color: transparent;
+    color: #000;
+
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 40px;
+    cursor: pointer;
+}
+/*---------Right Slide Move---------------*/
+.control_next {
+    right: 0;
+}
+/*---------4 Row Images---------------*/
+.box-row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: space-between;
+    margin: 20 30px;
+}
+.box-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.box-grid span{
+    font-weight: 200;
+    font-size: 12px;
+    
+}
+
+.box-grid img, .box-col img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/*---------4 Row Images---------------*/
+.box-col a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #009999;
+    font-weight: 500;
+   
+   
+}
+/*---------Shop now---------------*/
+.shop {
+    text-decoration: none;
+    font-size: 13px;
+    color: #009999;
+    font-weight: 500;
+   
+   
+}
+
+.box-grid-span {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+}
+.box-grid-span span:nth-child(1) {
+    grid-column: span 4; /* Span all 4 columns */
+}
+
+.box-grid-span span{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.box-grid-span img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.header-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 20px 30px;
+    /* margin-top: -20vw; */
+}
+
+.box-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+    background: white;
+    z-index: 1;
+    flex: 1;
+    min-width: 200px;
+    
+    box-sizing: border-box;
+    /* display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+    background: white;
+    z-index: 1;
+    /* max-width: 24%; 
+    min-width: 200px;
+     align-items: center;
+    box-sizing: border-box; */
+}
+
+/* .box-col a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #009999;
+    font-weight: 500;
+} */
+/*---------Gift Product---------------*/
+.products-slider {
+    background-color: white;
+    margin: 0px 30px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.products-slider .products {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+
+/* .products-slider .products::-webkit-scrollbar {
+    display: none;
+} */
+
+.products-slider .products img {
+    max-width: 200px;
+    max-height: 200;
+}
+
+
+/*---------Sign in Container---------------*/
+.sigin-container{
+    height: 150px;
+    width: 100%;
+    margin-top: 10px;
+    padding-top:20px ; 
+    background-color:white ;  
+    
+    
+}
+.content-sign{
+  
+    height: 90%;
+    border-radius: 4px;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid rgb(212, 204, 204);
+}
+.content-sign h6{
+    margin: 3px;
+    font-weight: 100;
+}
+/*---------Sign in Button---------------*/
+.button-in {
+    background-color: #ffe093;
+    color: #000;
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+    font-weight: 300;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #ffe093;
+    height: 28px;
+    border: none;
+    padding: 1px 80px;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  /*---------Back to top---------------*/
+  .footer-container-first{
+    height: 70px;
+    width: 100%;
+    margin-top: 0px;
+    background-color:#404347 ;
+    color: #fff;
+    padding: 2-px 20px;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+ }
+ /*---------Footer---------------*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #131921;
+    padding: 20px 60px;
+}
+
+/* ---------- media query ----------- */
+
+@media only screen and (max-width: 900px){
+    nav{
+        flex-wrap: wrap;
+    }
+    .nav-search{
+        order: 7;
+        margin: 15px 0 5px;
+        min-width: 300px;
+    }
+    .box-col{
+        max-width: 48%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .nav-country{
+        display: none;
+    }
+    .nav-language{
+        display: none;
+    }
+    .nav-texts{
+        display: none;
+    }
+    .nav-bottom{
+        font-size: 13px;
+        gap: 10px;
+        overflow-x: scroll;
+    }
+    .nav-bottom::-webkit-scrollbar{
+       display: none;
+    }
+    .nav-bottom p{
+        text-wrap: nowrap;
+    }
+    .mobile-user-icon{
+        display: flex !important;
+        flex: 1;
+        justify-content: flex-end;
+    }
+    .mobile-user-icon img{
+        width: 25px;
+    }
+    .nav-cart h4{
+        display: none;
+    }
+    .nav-cart img{
+        width: 25px;
+    }
+    .header-slider a{
+        top: 24%;
+        padding: 2vh 1vw;
+        font-size: 15px;
+    }
+    .box-col{
+        max-width: 100%;
+        width: 100%;
+    }
+    footer{
+        justify-content: center;
+        flex-direction: column;
+        font-size: 14px;
+    }
+}
